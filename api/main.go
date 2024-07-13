@@ -11,7 +11,7 @@ func main() {
 	db.DBConnect()
 
 	db.DB.AutoMigrate(&models.Task{})
-	db.DB.AutoMigrate(&models.User{})
+	db.DB.AutoMigrate(&models.Register{})
 
 	e := echo.New()
 	api.Routes(e)

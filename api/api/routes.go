@@ -6,6 +6,7 @@ import (
 
 func Routes(e *echo.Echo) {
 
-	e.POST("/", PostUser)
+	e.POST("/register", PostUser)
+	e.POST("/login", PostLogin)
 
 }
